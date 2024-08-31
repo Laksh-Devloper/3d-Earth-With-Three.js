@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth Model</title>
+
+    <style>
+      body {
+          margin: 0;
+          overflow-y: scroll; /* Allow vertical scrolling */
+          height: 200vh; /* Make body height larger to enable scrolling */
+          background-color: black; /* Set a background color for better visibility */
+      }
+      #text {
+          position: fixed; /* Keep text fixed on screen */
+          left: -100%; /* Start off-screen */
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 2rem;
+          color: white;
+          transition: left 0.5s ease-in-out;
+          z-index: 1; /* Ensure text appears above the canvas */
+      }
+  </style>
+  
+    <style>
+        body {
+            margin: 0;
+            overflow-y: scroll; /* Allow vertical scrolling */
+            height: 200vh; /* Make body height larger to enable scrolling */
+        }
+        #text {
+            position: fixed; /* Keep text fixed on screen */
+            left: -100%; /* Start off-screen */
+            top: 50%;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            transform: translateY(-50%);
+            font-size: 50px;
+            color: white;
+            transition: left 0.5s ease-in-out;
+            z-index: 1; /* Ensure text appears above the canvas */
+        }
+ 
+    </style>
+</head>
+<body>
+    <div id="text">Earth Model</div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
